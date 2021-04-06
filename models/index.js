@@ -1,11 +1,16 @@
 import DietaryRestrictions from './DietaryRestrictions.js';
-import DiningHall from './DiningHall.js';
-import Macros from './Macros.js';
-import Meals from './Meals.js';
+import Companies from './Companies.js';
+import DegreeField from './DegreeField.js';
+import DegreeRank from './DegreeRank.js';
+import Industry from './Industry.js';
+import InternshipIndustries from './InternshipIndustries.js';
+import JobsAndInternships from './DegreeRank.js';
 
 export default {
-  DietaryRestrictions,
-  DiningHall,
-  Macros,
-  Meals
+  Companies,
+  DegreeField,
+  DegreeRank,
+  Industry,
+  InternshipIndustries,
+  JobsAndInternships
 };
