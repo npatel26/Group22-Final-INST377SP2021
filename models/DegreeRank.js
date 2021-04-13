@@ -7,7 +7,7 @@ export default (database, DataTypes) => {
           allowNull: false,
           primaryKey: true
         },
-        degree_type: {
+        degree_title: {
           type: DataTypes.STRING,
           allowNull: false
         },
