@@ -1,3 +1,4 @@
+//Niki Patel
 export default (database, DataTypes) => {
     const DegreeField = database.define(
       'degree_field',

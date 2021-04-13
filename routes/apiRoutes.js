@@ -165,7 +165,74 @@ router.delete('/industry/:industry_id', async (req, res) => {
     res.error('Server error');
   }
 });
-
+/// ///////////////////////////////////////////
+///Industry Endpoints--Done by Nikita Patel///
+/// /////////////////////////////////////////
+router.get('/degree_field', async (req, res) => {
+  try {
+    const degree_field = await db.DegreeField.findAll();
+    const reply = degree_field.length > 0 ? { data: degree_field } : { message: 'no results found' };
+    res.json(reply);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Degree Field ID 
+router.get('/degree_field/:degree_field_id', async (req, res) => {
+  try {
+    const degree_field = await db.DegreeField.findAll({
+      where: {
+        degree_field_id: req.params.degree_field_id
+      }
+    });
+    res.json(degree_field);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Degree Type
+router.get('/degree_field/:degree_type', async (req, res) => {
+  try {
+    const degree_field = await db.DegreeField.findAll({
+      where: {
+        degree_type: req.params.degree_type
+      }
+    });
+    res.json(degree_field);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+router.post('/degree_field', async (req, res) => {
+const degree_field = await db.DegreeField.findAll();
+const currentId = (await degree_field.length) + 1;
+try {
+  const newDegreeField = await db.DegreeField.create({
+    degree_field_id: currentId,
+    degree_type: req.body.degree_type,
+  });
+  res.json(newDegreeField);
+} catch (err) {
+  console.error(err);
+  res.error('Server error');
+}
+});
+router.delete('/degree_field/:degree_field_id', async (req, res) => {
+try {
+  await db.DegreeField.destroy({
+    where: {
+      degree_field_id: req.params.degree_field_id
+    }
+  });
+  res.send('Successfully Deleted');
+} catch (err) {
+  console.error(err);
+  res.error('Server error');
+}
+});
 /// /////////////////////////////////
 /// ////Position Title Endpoints////////
 /// /////////////////////////////////
