@@ -96,7 +96,7 @@ router.delete('/companies/:company_id', async (req, res) => {
 // Possible add city and/or state
 
 /// /////////////////////////////////
-/// ////Industry Endpoints////////
+/// ////Industry Endpoints -- Done by Lindsey Castin////////
 /// /////////////////////////////////
 router.get('/industry', async (req, res) => {
     try {
@@ -137,6 +137,33 @@ router.get('/companies/:industry_type', async (req, res) => {
       console.error(err);
       res.error('Server error');
     }
+});
+router.post('/industry', async (req, res) => {
+  const Industry = await db.Industry.findAll();
+  const currentId = (await Industry.length) + 1;
+  try {
+    const newIndustry = await db.Industry.create({
+      industry_id: currentId,
+      industry_type: req.body.industry_type,
+    });
+    res.json(newIndustry);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+router.delete('/industry/:industry_id', async (req, res) => {
+  try {
+    await db.Industries.destroy({
+      where: {
+        industry_id: req.params.industry_id
+      }
+    });
+    res.send('Successfully Deleted');
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
 });
 
 /// /////////////////////////////////

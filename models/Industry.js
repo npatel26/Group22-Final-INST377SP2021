@@ -1,3 +1,4 @@
+// Done by Lindsey Castin
 export default (database, DataTypes) => {
     const Industry = database.define(
       'industry',
