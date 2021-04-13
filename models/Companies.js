@@ -1,3 +1,4 @@
+// Done by Kyle Rosenstein
 export default (database, DataTypes) => {
     const Companies = database.define(
       'companies',
