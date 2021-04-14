@@ -303,7 +303,7 @@ router.delete('/degree_rank/:degree_rank_id', async (req, res) => {
   });
 
 /// /////////////////////////////////
-/// ////Position Title Endpoints////////
+/// ////Position Title Endpoints - Vincent Tann////////
 /// /////////////////////////////////
 router.get('/jobs_and_internships', async (req, res) => {
     try {
@@ -329,4 +329,144 @@ router.get('/jobs_and_internships/:position_title', async (req, res) => {
       console.error(err);
       res.error('Server error');
     }
+});
+// Job ID
+router.get('/jobs_and_internships/:job_id', async (req, res) => {
+  try {
+      const jobs_and_internships = await db.JobsAndInternships.findAll({
+      where: {
+        job_id: req.params.job_id
+      }
+    });
+
+    res.json(jobs_and_internships);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Company ID
+router.get('/jobs_and_internships/:company_id', async (req, res) => {
+  try {
+      const jobs_and_internships = await db.JobsAndInternships.findAll({
+      where: {
+        company_id: req.params.company_id
+      }
+    });
+
+    res.json(jobs_and_internships);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Job Degree Requirement ID
+router.get('/jobs_and_internships/:degree_req_id', async (req, res) => {
+  try {
+      const jobs_and_internships = await db.JobsAndInternships.findAll({
+      where: {
+        degree_req_id: req.params.degree_req_id
+      }
+    });
+
+    res.json(jobs_and_internships);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Work Description
+router.get('/jobs_and_internships/:work_desc', async (req, res) => {
+  try {
+      const jobs_and_internships = await db.JobsAndInternships.findAll({
+      where: {
+        work_desc: req.params.work_desc
+      }
+    });
+
+    res.json(jobs_and_internships);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Skills Description
+router.get('/jobs_and_internships/:skills_desc', async (req, res) => {
+  try {
+      const jobs_and_internships = await db.JobsAndInternships.findAll({
+      where: {
+        skills_desc: req.params.skills_desc
+      }
+    });
+
+    res.json(jobs_and_internships);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Application Due Date
+router.get('/jobs_and_internships/:application_due_date', async (req, res) => {
+  try {
+      const jobs_and_internships = await db.JobsAndInternships.findAll({
+      where: {
+        application_due_date: req.params.application_due_date
+      }
+    });
+
+    res.json(jobs_and_internships);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Job Link
+router.get('/jobs_and_internships/:link', async (req, res) => {
+  try {
+      const jobs_and_internships = await db.JobsAndInternships.findAll({
+      where: {
+        link: req.params.link
+      }
+    });
+
+    res.json(jobs_and_internships);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Job Post
+router.post('/jobs_and_internships', async (req, res) => {
+  const jobs_and_internships = await db.JobsAndInternships.findAll();
+  const newId = (await jobs_and_internships.length) + 1;
+  try {
+    const newJob = await db.JobsAndInternships.create({
+      job_id: newId,
+      company_id: req.body.company_id,
+      degree_field_id: req.body.degree_field_id,
+      position_title: req.body.position_title,
+      work_desc: req.body.work_desc,
+      skills_desc: req.body.skills_desc,
+      application_due_date: req.body.application_due_date,
+      link: req.body.link,
+    });
+    res.json(newJob);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Job Delete
+router.delete('/jobs_and_internships/:job_id', async (req, res) => {
+  try {
+    await db.JobsAndInternships.destroy({
+      where: {
+        job_id: req.params.job_id
+      }
+    });
+    res.send('Successfully Deleted');
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
 });
