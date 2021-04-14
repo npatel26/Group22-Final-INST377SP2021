@@ -1,8 +1,9 @@
+//Maya Alli 
 export default (database, DataTypes) => {
-    const DegreeField = database.define(
-      'degree_field',
+    const DegreeRank = database.define(
+      'degree_rank',
       {
-        degree_field_id: {
+        degree_rank_id: {
           type: DataTypes.INTEGER,
           allowNull: false,
           primaryKey: true
@@ -14,5 +15,5 @@ export default (database, DataTypes) => {
       },
       { freezeTableName: true, timestamps: false }
     );
-    return DegreeField;
+    return DegreeRank;
   };

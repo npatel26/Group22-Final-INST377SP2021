@@ -234,6 +234,75 @@ try {
 }
 });
 /// /////////////////////////////////
+/// ////Degree Rank Endpoints Done by Maya Alli////////
+/// /////////////////////////////////
+router.get('/degree_rank', async (req, res) => {
+  try {
+    const degree_rank = await db.DegreeRank.findAll();
+    const reply = degree_rank.length > 0 ? { data: degree_rank } : { message: 'no results found' };
+    res.json(reply);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Degree Rank ID 
+router.get('/degree_rank/:degree_rank_id', async (req, res) => {
+  try {
+    const degree_rank = await db.DegreeRank.findAll({
+      where: {
+        degree_rank_id: req.params.degree_rank_id
+      }
+    });
+    res.json(degree_rank);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+// Degree Title
+router.get('/degree_rank/:degree_title', async (req, res) => {
+  try {
+    const degree_rank = await db.DegreeRank.findAll({
+      where: {
+        degree_title: req.params.degree_title
+      }
+    });
+    res.json(degree_rank);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+router.post('/degree_rank', async (req, res) => {
+  const DegreeRank = await db.DegreeRank.findAll();
+  const currentId = (await DegreeRank.length) + 1;
+  try {
+    const newRank = await db.DegreeRank.create({
+      degree_rank_id: currentId,
+      degree_title: req.body.degree_title,
+    });
+    res.json(newRank);
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+});
+router.delete('/degree_rank/:degree_rank_id', async (req, res) => {
+  try {
+    await db.DegreeRank.destroy({
+      where: {
+        degree_rank_id: req.params.degree_rank_id
+      }
+    });
+    res.send('Successfully Deleted');
+  } catch (err) {
+    console.error(err);
+    res.error('Server error');
+  }
+  });
+
+/// /////////////////////////////////
 /// ////Position Title Endpoints////////
 /// /////////////////////////////////
 router.get('/jobs_and_internships', async (req, res) => {
