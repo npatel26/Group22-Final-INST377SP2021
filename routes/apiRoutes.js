@@ -470,3 +470,5 @@ router.delete('/jobs_and_internships/:job_id', async (req, res) => {
     res.error('Server error');
   }
 });
+
+export default router;
