@@ -1,4 +1,3 @@
-import DietaryRestrictions from './DietaryRestrictions.js';
 import Companies from './Companies.js';
 import DegreeField from './DegreeField.js';
 import DegreeRank from './DegreeRank.js';
