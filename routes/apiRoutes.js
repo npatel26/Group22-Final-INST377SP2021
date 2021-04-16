@@ -1,3 +1,5 @@
+import express from 'express';
+import sequelize from 'sequelize';
 import db from '../database/initializeDB.js';
 
 const router = express.Router();
@@ -470,3 +472,5 @@ router.delete('/jobs_and_internships/:job_id', async (req, res) => {
     res.error('Server error');
   }
 });
+
+export default router;
