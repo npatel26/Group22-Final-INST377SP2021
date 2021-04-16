@@ -1,3 +1,4 @@
+// Vincent Tann
 export default (database, DataTypes) => {
     const JobsAndInternships = database.define(
       'jobs_and_internships',
