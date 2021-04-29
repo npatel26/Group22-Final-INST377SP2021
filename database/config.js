@@ -2,7 +2,7 @@ export default {
   development: {
     username: 'student',
     password: 'INST377@UMD',
-    database: 'interships',
+    database: 'internships',
     host: '3.236.243.212',
     dialect: 'mysql'
   },
