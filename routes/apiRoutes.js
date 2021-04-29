@@ -21,7 +21,7 @@ router.get('/companies', async (req, res) => {
       res.error('Server error');
     }
 });
-// Companny ID
+// Company ID
 router.get('/companies/:company_id', async (req, res) => {
     try {
       const companies = await db.Companies.findAll({
@@ -473,12 +473,13 @@ router.delete('/jobs_and_internships/:job_id', async (req, res) => {
   }
 });
 
+// Custom SQL Endpoint
+
 router.get("/custom", async (req, res) => {
   try {
     const result = await db.sequelizeDB.query(req.body.query, {
       type: sequelize.QueryTypes.SELECT,
     });
-    console.log("Result: ", result);
     res.json(result);
   } catch (err) {
     console.error(err);

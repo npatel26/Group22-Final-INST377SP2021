@@ -1,14 +1,10 @@
 async function getCompanyData() {
-    const endpoint = '/api/companies/';
-    const request = await fetch(endpoint);
-    const result = await request.json();
-
-    const companies = [];
-    companies.push(result.data);
+    const endpoint = await fetch('/api/companies/');
+    const result = await endpoint.json();
     
-    const finalArr = companies[0];
+    const finalArr = await result.data;
     const target = document.querySelector('#companyTable');
-
+    console.log(result);
     finalArr.forEach((index) => {
         const id = index.company_id;
         const name = index.company_name;
