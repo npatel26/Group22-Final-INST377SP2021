@@ -12,7 +12,7 @@ async function getCompanyData() {
     const state = index.company_state;
 
     const appendObj = document.createElement('tr');
-    appendObj.innerHTML = '<td>${id}</td> <td>${name}</td> <td>${city}</td> <td>${state}</td>';
+    appendObj.innerHTML = '<td>' + id + '</td> <td>' + name + '</td> <td>' + city + '</td> <td>' + state + '</td>';
     target.append(appendObj);
   });
 }
