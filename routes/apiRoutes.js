@@ -473,4 +473,17 @@ router.delete('/jobs_and_internships/:job_id', async (req, res) => {
   }
 });
 
+router.get("/custom", async (req, res) => {
+  try {
+    const result = await db.sequelizeDB.query(req.body.query, {
+      type: sequelize.QueryTypes.SELECT,
+    });
+    console.log("Result: ", result);
+    res.json(result);
+  } catch (err) {
+    console.error(err);
+    res.error("Server error");
+  }
+});
+
 export default router;
