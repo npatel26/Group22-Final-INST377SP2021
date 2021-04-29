@@ -4,7 +4,7 @@ async function getCompanyData() {
     
   const finalArr = await result.data;
   const target = document.querySelector('#companyTable');
-  console.log(result);
+  console.log(finalArr);
   finalArr.forEach((index) => {
     const id = index.company_id;
     const name = index.company_name;
@@ -12,7 +12,7 @@ async function getCompanyData() {
     const state = index.company_state;
 
     const appendObj = document.createElement('tr');
-    appendObj.innerHtml = '<td>${id}</td> <td>${name}</td> <td>${city}</td> <td>${state}</td>';
+    appendObj.innerHTML = '<td>${id}</td> <td>${name}</td> <td>${city}</td> <td>${state}</td>';
     target.append(appendObj);
   });
 }
