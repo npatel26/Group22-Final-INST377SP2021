@@ -8,7 +8,7 @@ export default (database, DataTypes) => {
           allowNull: false,
           primaryKey: true
         },
-        industry_type: {
+        industry_type: { // Analytics, Business, Engineering
           type: DataTypes.STRING,
           allowNull: false
         },
