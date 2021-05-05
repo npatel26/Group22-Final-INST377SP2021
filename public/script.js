@@ -54,9 +54,9 @@ async function getDegreeData() {
 }
 
 async function windowActions() {
-  getCompanyData();
-  getIndustryData();
-  getDegreeData();
+  await getIndustryData();
+  await getDegreeData();
+  await getCompanyData();
 }
 
 window.onload = windowActions();

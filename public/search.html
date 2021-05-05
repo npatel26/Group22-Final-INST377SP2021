@@ -18,9 +18,25 @@
                 </ul>
             </nav>
         </header>
+        <form>
+            <label for="job">Search by Position Title</label>
+            <input type="text" name="job" id="job">
+        </form>
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <h2>Job/Internship Postings</h2>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Work Description</th>
+                    <th>Skills Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody id="jobsTable">
+            </tbody>
+        </table>
 
-        <p>This is where you search for job and internship postings</p>
-
+        <script src='script_search.js'></script>
     </body>
 </html>
 
