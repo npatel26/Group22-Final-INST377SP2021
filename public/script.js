@@ -2,6 +2,11 @@
 
 // Pulls company data from server and displays on front end
 async function getCompanyData() {
+  //console.log('window loaded');
+  //const endpoint = '/api/companies';
+  //const request = await fetch(endpoint);
+  //const companies = await request.json();
+  //console.log(companies);
   const endpoint = await fetch('/api/companies');
   const result = await endpoint.json();
     
@@ -21,6 +26,11 @@ async function getCompanyData() {
 
 // Pulls industry data from server and displays on front end
 async function getIndustryData() {
+  //console.log('window loaded');
+  //const endpoint = '/api/industry';
+  //const request = await fetch(endpoint);
+  //const industries = await request.json();
+  //console.log(industries);
   const endpoint = await fetch('/api/industry');
   const result = await endpoint.json();
     
@@ -38,6 +48,11 @@ async function getIndustryData() {
 
 // Pulls degree data from server and displays on front end
 async function getDegreeData() {
+  //console.log('window loaded');
+  //const endpoint = '/api/degree_field';
+  //const request = await fetch(endpoint);
+  //const degrees = await request.json();
+  //console.log(degrees);
   const endpoint = await fetch('/api/degree_field');
   const result = await endpoint.json();
     
@@ -60,3 +75,7 @@ async function windowActions() {
 }
 
 window.onload = windowActions();
+
+
+
+
