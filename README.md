@@ -42,8 +42,6 @@ There are currently no prewritten tests for the application, however you can use
 
 ## Server Application API
 
-NOT COMPLETE
-
 `/api` - API route for all data
 
 | API Methods   | Description          |
