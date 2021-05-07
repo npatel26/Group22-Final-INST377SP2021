@@ -1,7 +1,7 @@
-# This is your readme
+# This is your readme DELETE THIS WHEN DONE
 You are required to fill it in with documentation similar to that found in the Sequelize example for the course as part of your final project.
 
-### How to use Markdown
+### How to use Markdown DELETE THIS WHEN DONE
 Markdown is a text notation system used in Discord, Whatsapp and similar to structure pages without writing HTML at all. You'll be using it for your documentation.
 * [Markdown guide](https://www.markdownguide.org/cheat-sheet/)
 
