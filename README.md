@@ -42,3 +42,11 @@ As recruiting for an internship/full time employment becomes continuously arduou
 2. Open repository in VSCode Terminal or Terminal application.
 3. Type `npm install` into the terminal window and run.
 4. After installation, the application should be ready to use.
+
+## How to run application
+
+--
+
+1. Open repository in VSCode terminal or Terminal application.
+2. Run `npm start`. No errors should occur.
+3. The application should now be accessible by going to `http://localhost:3000/` on a web browser.
