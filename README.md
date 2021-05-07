@@ -1,11 +1,4 @@
-# This is your readme DELETE THIS WHEN DONE
-You are required to fill it in with documentation similar to that found in the Sequelize example for the course as part of your final project.
-
-### How to use Markdown DELETE THIS WHEN DONE
-Markdown is a text notation system used in Discord, Whatsapp and similar to structure pages without writing HTML at all. You'll be using it for your documentation.
-* [Markdown guide](https://www.markdownguide.org/cheat-sheet/)
-
-# Terps4Work
+# Internship + Full Time Employment Opportunity Database
 
 ## Description
 
@@ -14,7 +7,7 @@ As recruiting for an internship/full time employment becomes continuously arduou
 
 ## Links
 
-[Terps4Work Website](https://stark-dusk-71862.herokuapp.com/)
+[Website](https://stark-dusk-71862.herokuapp.com/)
 
 [Developer Manual](https://github.com/npatel26/Group22-Final-INST377SP2021/blob/main/README.md#developer-manual)
 
@@ -54,14 +47,14 @@ NOT COMPLETE
 `api` - API route for all data
 
 | API Methods   | Description          |
-| ------------- | -------------------- |
+| :--- | :--- |
 | GET           |  Retrieves resources |
 | POST          |  Creates resources   |
 | DELETE        |  Deletes resources   |
 
 
 | Endpoints            | Description |
-| -------------------- | ----------- |
+| :--- | :--- |
 | companies            | Company information that includes company ID, company name, and city of company. |
 | industry             | Industry information that includes industry ID and industy type. |
 | degree_field         | Degree field information that includes degree field ID and degree type (Ex. Science, Accounting, Law, etc.). |
