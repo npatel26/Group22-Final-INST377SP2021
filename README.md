@@ -15,13 +15,13 @@ As recruiting for an internship/full time employment becomes continuously arduou
 ## Link to Website
 
 [Terps4Work Website](https://stark-dusk-71862.herokuapp.com/)
+[Developer Manual](https://github.com/npatel26/Group22-Final-INST377SP2021/blob/main/README.md#developer-manual)
 
 ## Target Browsers
 
 - Desktop
 - MacBook
 - Surface Book
-
 ---
 
 # Developer Manual
