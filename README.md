@@ -7,36 +7,26 @@ Markdown is a text notation system used in Discord, Whatsapp and similar to stru
 
 # Terps4Work
 
----
-
 ## Description
-
----
 
 As recruiting for an internship/full time employment becomes continuously arduous in this virtual environment, our group set out to create a platform that contains various internship and full-time employment opportunities across 7 industries. By having a centralized platform that is accessible for University of Maryland students, our group hopes to help our peers gain internship and full-time employment. 
 
 
 ## Link to Website
 
----
-
 [Terps4Work Website](https://stark-dusk-71862.herokuapp.com/)
 
 ## Target Browsers
-
----
 
 - Desktop
 - MacBook
 - Surface Book
 
+---
+
 # Developer Manual
 
----
-
 ## How to Install
-
----
 
 1. Clone this repository through Github Desktop or through Terminal.
 2. Open repository in VSCode Terminal or Terminal application.
@@ -44,8 +34,6 @@ As recruiting for an internship/full time employment becomes continuously arduou
 4. After installation, the application should be ready to use.
 
 ## How to run application
-
----
 
 1. Open repository in VSCode terminal or Terminal application.
 2. Run `npm start`. No errors should occur.
