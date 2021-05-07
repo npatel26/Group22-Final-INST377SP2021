@@ -1,5 +1,6 @@
 body {
     padding: 5px;
+    background-color: lightblue;
 }
 p {
     margin-top: 10px;
@@ -8,8 +9,8 @@ p {
 h1 {
     text-align: center;
     font-size: 30px;
-    color: white;
-    background-color: blue;
+    color:black;
+    background-color: lightyellow;
     padding: 10px;
 }
 h2 {
@@ -38,12 +39,8 @@ th {
     padding: 5px;
 }
 a:link {
-    color: blue;
+    color:lightyellow;
 }
 a:visited {
     color: purple;
 }
-a:hover {
-    color: black;
-}
-
