@@ -51,12 +51,23 @@ There are currently no prewritten tests for the application, however you can use
 
 NOT COMPLETE
 
-| GET Endpoints | Description |
-| ------------- | ----------- |
-| companies     |             |
-| industry      |             |
-| degree_field  |             |
-| degree_rank   |             |
+`api` - API route for all data
+
+| API Methods   | Description          |
+| ------------- | -------------------- |
+| GET           |  Retrieves resources |
+| POST          |  Creates resources   |
+| DELETE        |  Deletes resources   |
+
+
+| Endpoints            | Description |
+| -------------------- | ----------- |
+| companies            |             |
+| industry             |             |
+| degree_field         |             |
+| degree_rank          |             |
+| jobs_and_internships |             |
+
 
 ## Known Bugs and Further Development
 
