@@ -51,6 +51,13 @@ There are currently no prewritten tests for the application, however you can use
 
 NOT COMPLETE
 
+| GET Endpoints | Description |
+| ------------- | ----------- |
+| companies     |             |
+| industry      |             |
+| degree_field  |             |
+| degree_rank   |             |
+
 ## Known Bugs and Further Development
 
 Known Bugs:
