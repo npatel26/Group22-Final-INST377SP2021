@@ -12,7 +12,7 @@ Markdown is a text notation system used in Discord, Whatsapp and similar to stru
 As recruiting for an internship/full time employment becomes continuously arduous in this virtual environment, our group set out to create a platform that contains various internship and full-time employment opportunities across 7 industries. By having a centralized platform that is accessible for University of Maryland students, our group hopes to help our peers gain internship and full-time employment. 
 
 
-## Link to Website
+## Links
 
 [Terps4Work Website](https://stark-dusk-71862.herokuapp.com/)
 
