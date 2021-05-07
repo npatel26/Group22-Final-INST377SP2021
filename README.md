@@ -4,3 +4,36 @@ You are required to fill it in with documentation similar to that found in the S
 ### How to use Markdown
 Markdown is a text notation system used in Discord, Whatsapp and similar to structure pages without writing HTML at all. You'll be using it for your documentation.
 * [Markdown guide](https://www.markdownguide.org/cheat-sheet/)
+
+### Terps4Work
+
+---
+
+## Description
+
+---
+
+As recruiting for an internship/full time employment becomes continuously arduous in this virtual environment, our group set out to create a platform that contains various internship and full-time employment opportunities across 7 industries. By having a centralized platform that is accessible for University of Maryland students, our group hopes to help our peers gain internship and full-time employment. 
+
+
+## Link to Website
+
+---
+
+[Terps4Work Website](https://stark-dusk-71862.herokuapp.com/)
+
+## Target Browsers
+
+---
+
+- Desktop
+- MacBook
+- Surface Book
+
+### Developer Manual
+
+---
+
+## How to Install
+
+---
