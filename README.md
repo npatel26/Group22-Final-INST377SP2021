@@ -66,7 +66,7 @@ NOT COMPLETE
 | industry             | Industry information that includes industry ID and industy type. |
 | degree_field         | Degree field information that includes degree field ID and degree type (Ex. Science, Accounting, Law, etc.). |
 | degree_rank          | Degree rank information that includes degree rank ID and degree title (Ex. Pursuing Bachelor's, Bachelor's degree, etc.). |
-| jobs_and_internships | Job position information that includes job ID, company ID, degree requirement ID, work description, skills description, application due date, and link. |
+| jobs_and_internships | Job position information that includes job ID, company ID, degree requirement ID, work description, skills description, application due date, and website link. |
 
 
 ## Known Bugs and Further Development
