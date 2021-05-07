@@ -439,6 +439,7 @@ router.get('/jobs_and_internships/:link', async (req, res) => {
 });
 // Job Post
 router.post('/jobs_and_internships', async (req, res) => {
+  console.info('Post request to /jobs_and_internships', req.body);
   const jobs_and_internships = await db.JobsAndInternships.findAll();
   const newId = (await jobs_and_internships.length) + 1;
   try {

@@ -20,42 +20,31 @@
         </header>
         
         <h2><strong>Upload Job/Internship Posting</strong></h2>
-        <label for="job">Position Title</label>
-        <input type="text" name="job" id="job">
-        <br>
-        <label for="pos_type">Position Type</label>
-        <input type="checkbox" name="pos_type" id="pos_type">Full-Time
-        <input type="checkbox" name="pos_type" id="pos_type">Internship 
-        <br>
-        <label for="desc">Description</label>
-        <input type="text" name="desc" id="desc">
-        <br>
-        <label for="quals">Qualifications</label>
-        <input type="text" name="quals" id="quals">
-        <br>
-        <label for="link">Link</label>
-        <input type="text" name="link" id="link">
-        <br>
-
-        <h2><strong>Add New Company</strong></h2>
-        <label for="company">Company Name</label>
-        <input type="text" name="company" id="company">
-        <br>
-        <label for="city">Company City</label>
-        <input type="text" name="city" id="city">
-        <br>
-        <label for="state">Company State</label>
-        <input type="text" name="state" id="state">
-        <br>
-
-        <h2><strong>Add New Industry</strong></h2>
-        <label for="industry">Industry Type</label>
-        <input type="text" name="industry" id="industry">
-        <br>
-
-        <h2><strong>Add New Degree</strong></h2>
-        <label for="degree">Degree Type</label>
-        <input type="text" name="degree" id="degree">
+        <form action="/api/jobs_and_internships" id="recordSubmit" method="POST">
+            <label for="company">Company ID</label>
+            <input type="text" name="company" id="company">
+            <br>
+            <label for="degree">Degree Requirements ID</label>
+            <input type="text" name="degree" id="degree">
+            <br>
+            <label for="job">Position Title</label>
+            <input type="text" name="job" id="job">
+            <br>
+            <label for="desc">Description</label>
+            <input type="text" name="desc" id="desc">
+            <br>
+            <label for="skills">Skills/Qualifications</label>
+            <input type="text" name="skills" id="skills">
+            <br>
+            <label for="date">Application Due Date</label>
+            <input type="text" name="date" id="date">
+            <br>
+            <label for="link">Link</label>
+            <input type="text" name="link" id="link">
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmation"></div>
+        <script src="post_script.js"></script>
     </body>
 </html>
 
