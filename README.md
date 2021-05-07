@@ -39,3 +39,13 @@ As recruiting for an internship/full time employment becomes continuously arduou
 1. Open repository in VSCode terminal or Terminal application.
 2. Run `npm start`. No errors should occur.
 3. The application should now be accessible by going to `http://localhost:3000/` on a web browser.
+
+## How to run tests
+There are currently no prewritten tests for the application, however you can use Cypress to run your own written tests.
+
+1. Open 2 terminals. (Make sure you are working in the main project directory.)
+2. On one terminal, run `npm start`.
+3. On the other terminal, run `npm test`.
+
+## Server application APIs
+
