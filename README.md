@@ -45,7 +45,7 @@ As recruiting for an internship/full time employment becomes continuously arduou
 
 ## How to run application
 
---
+---
 
 1. Open repository in VSCode terminal or Terminal application.
 2. Run `npm start`. No errors should occur.
