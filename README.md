@@ -34,18 +34,29 @@ As recruiting for an internship/full time employment becomes continuously arduou
 3. Type `npm install` into the terminal window and run.
 4. After installation, the application should be ready to use.
 
-## How to run application
+## How to Run the Application
 
 1. Open repository in VSCode terminal or Terminal application.
 2. Run `npm start`. No errors should occur.
 3. The application should now be accessible by going to `http://localhost:3000/` on a web browser.
 
-## How to run tests
+## How to Run Tests
 There are currently no prewritten tests for the application, however you can use Cypress to run your own written tests.
 
 1. Open 2 terminals (Note: Make sure you are working in the main project directory).
 2. On one terminal, run `npm start`.
 3. On the other terminal, run `npm test`.
 
-## Server application APIs
+## Server Application API
 
+NOT COMPLETE
+
+## Known Bugs and Further Development
+
+Known Bugs:
+- NOT COMPLETE
+
+Further Development:
+- Add more pages that would further personalize the user's job search.
+- Add more options for searching by job titles and positions.
+- Add more job listings from original database sources.
