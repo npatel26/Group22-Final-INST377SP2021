@@ -44,7 +44,7 @@ There are currently no prewritten tests for the application, however you can use
 
 NOT COMPLETE
 
-`api` - API route for all data
+`/api` - API route for all data
 
 | API Methods   | Description          |
 | --- | --- |
