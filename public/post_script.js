@@ -26,13 +26,13 @@ async function recordSubmission() {
             })
         });
         const notif = document.querySelector('#confirmation');
-        const confirmation = document.createElement('p');
-        confirmation.innerHTML = 'Your job posting has been added';
-        notif.append(confirmation);
+        notif.innerHTML = 'Your job posting has been added';
     });
 }
 
 async function windowActions() {
+    const button = document.querySelector('#button');
+    button.addEventListener('click', (event) => { recordSubmission() });
     await recordSubmission();
 }
     
