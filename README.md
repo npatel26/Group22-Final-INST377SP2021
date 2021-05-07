@@ -64,10 +64,11 @@ NOT COMPLETE
 
 ## Known Bugs and Further Development
 
-Known Bugs:
-- NOT COMPLETE
+Bugs:
+- Failure to add to database. Possibly due to company ID and degree requirement ID cannot be null, but impossible for a user to know and fill in that information.
 
 Further Development:
+- Solve failure to add to database.
 - Add more pages that would further personalize the user's job search.
 - Add more options for searching by job titles and positions.
 - Add more job listings from original database sources.
