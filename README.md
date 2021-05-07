@@ -47,14 +47,14 @@ NOT COMPLETE
 `api` - API route for all data
 
 | API Methods   | Description          |
-| :--- | :--- |
+| :---: | :---: |
 | GET           |  Retrieves resources |
 | POST          |  Creates resources   |
 | DELETE        |  Deletes resources   |
 
 
 | Endpoints            | Description |
-| :--- | :--- |
+| :---: | :---: |
 | companies            | Company information that includes company ID, company name, and city of company. |
 | industry             | Industry information that includes industry ID and industy type. |
 | degree_field         | Degree field information that includes degree field ID and degree type (Ex. Science, Accounting, Law, etc.). |
