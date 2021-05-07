@@ -37,3 +37,8 @@ As recruiting for an internship/full time employment becomes continuously arduou
 ## How to Install
 
 ---
+
+1. Clone this repository through Github Desktop or through Terminal.
+2. Open repository in VSCode Terminal or Terminal application.
+3. Type `npm install` into the terminal window and run.
+4. After installation, the application should be ready to use.
