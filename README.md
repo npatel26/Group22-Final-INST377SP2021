@@ -64,9 +64,10 @@ There are currently no prewritten tests for the application, however you can use
 
 Bugs:
 - Failure to add to database. Possibly due to company ID and degree requirement ID cannot be null, but impossible for a user to know and fill in that information.
+- After posting, application is slow.
 
 Further Development:
-- Solve failure to add to database.
+- Solve failure to add to database. Possible solution is to add company ID and degree requirement ID columns to respective tables in the General Information page.
 - Add more pages that would further personalize the user's job search.
 - Add more options for searching by job titles and positions.
 - Add more job listings from original database sources.
