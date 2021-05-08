@@ -53,14 +53,14 @@ async function getDegreeData() {
   //const request = await fetch(endpoint);
   //const degrees = await request.json();
   //console.log(degrees);
-  const endpoint = await fetch('/api/degree_field');
+  const endpoint = await fetch('/api/degree_rank');
   const result = await endpoint.json();
     
   const finalArr = await result.data;
   const target = document.querySelector('#degreeTable');
   console.log(finalArr);
   finalArr.forEach((index) => {
-    const type = index.degree_type;
+    const type = index.degree_title;
 
     const appendObj = document.createElement('tr');
     appendObj.innerHTML = '<td>' + type + '</td>';
