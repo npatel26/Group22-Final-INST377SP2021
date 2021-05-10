@@ -1,6 +1,7 @@
-body {
+body, html {
     padding: 5px;
     background-color: lightblue;
+    height: 100%;
 }
 p {
     margin-top: 10px;
